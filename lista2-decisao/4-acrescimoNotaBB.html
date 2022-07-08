@@ -1,0 +1,18 @@
+<script>
+    //acrescimoNotaBB - Um professor instituiu o programa BB na sua disciplina. Nesse programa, um aluno com notas melhores (o big brother) “adota” um aluno com dificuldades (o little brother) e o ajuda a aprender, em troca de um incentivo em sua nota, que é dado em função de quanto ele ajudou o seu colega a melhorar o próprio resultado. Esse programa recebe a nota do little brother antes de receber ajuda, e a sua nota depois que o big brother o ajudou, e retorna o acréscimo que o big brother receberá em sua nota pela ajuda. O acréscimo é de 1/4 da diferença das notas, se for positivo.
+    const NotabigBrotherAntes = Number(prompt("Qual e a nota inicial do bigbrother"))
+
+    const NotaLittleBrotherAntes = Number(prompt("qual e a nota inicial do littlebrother"))
+
+    const NotaLittleBrotherDepois = Number(prompt("Qual e a nota depois do littlebrother"))
+
+    const BigbrotherDepois = ((NotaLittleBrotherDepois - NotaLittleBrotherAntes) / 4) + NotabigBrotherAntes
+    if (NotaLittleBrotherAntes < NotaLittleBrotherDepois) {
+        alert(`nota bigbrother: ${BigbrotherDepois}`)
+    }
+    else {
+        alert(`Nota Big: ${NotabigBrotherAntes}`)
+    }
+
+
+</script>
