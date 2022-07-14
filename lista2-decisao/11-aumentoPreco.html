@@ -1,14 +1,25 @@
 <script>
   // aumentoPreco - Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério: até 280 (inclusive): aumento de 20% até 700 (inclusive): aumento de 15% até 1500 (inclusive): aumento de 10% acima de 1500: aumento de 5% Informe: o preço atual, o percentual de aumento, o valor do aumento e o novo preço, todos com duas casas decimais.
+//entrada
 
-const preço = Number(prompt("qual e o valor do produto"))
+const valorDoProduto = Number(prompt("Informe o preço do produto:"))
 
-const aumento = Number(prompt("qual e o aumento"))
+//processamento
 
-const valorSomadoComAumento = Number((""))
+let percentualAumento = 0
 
-if()
-{
+if(valorDoProduto<=280) percentualAumento = 20
+else if(valorDoProduto<=700) percentualAumento = 15
+else if(valorDoProduto<=1500) percentualAumento = 10
+else percentualAumento = 5
 
-}
+const valorAumento = valorDoProduto * (percentualAumento/100)
+const valorComAumento = valorDoProduto + valorAumento
+
+//saida 
+document.write(`o preço do produto era R$ ${valorDoProduto.toFixed(2)}<br>`)
+document.write(`o percentual de aumento foi de ${percentualAumento}<br>`)
+document.write(`o valor do aumento fiu de R$ ${valorAumento.toFixed(2)}<br>`)
+document.write(`o preço final sera de R$ ${valorComAumento.toFixed(2)}<br>` )
+
 </script>
