@@ -7,22 +7,23 @@
 
     const idadeDoCao = Number(prompt("qual é a idade do seu cão ?"))
 
-    const porteDoCao = (prompt("qual é o porte do seu cão ? (P para Pequeno, M para Medio e G para Grande)")).toUpperCase()
+    const porteDoCao = prompt("qual é o porte do seu cão ? (P para Pequeno, M para Medio e G para Grande").toUpperCase()
 
-    if (idadeDoCao == "P") {
-
+    
+    if (porteDoCao == "P") {
+        
         const idade = idadeDoCao * 5
 
         document.write(`seu cão tem ${idade} anos`)
     }
-    else if (idadeDoCao == "M") {
+    else if (porteDoCao == "M") {
 
         const idade = idadeDoCao * 6
 
         document.write(`seu cão ${idade} anos`)
 
     }
-    else if (idadeDoCao == "G") {
+    else if (porteDoCao == "G") {
 
         const idade = idadeDoCao * 7
 
